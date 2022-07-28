@@ -1,0 +1,19 @@
+<h1>新增書籍</h1>
+
+<%= form_for(@book) do |f| %>
+    <div class="form-item">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class="form-item">
+      <%= f.label :content %>
+      <%= f.text_area :content %>
+    </div>
+    <div class="form-item">
+      <%= f.label :price %>
+      <%= f.text_field :price %>
+    </div>
+
+    <%= f.submit %>
+<% end %>
+  
